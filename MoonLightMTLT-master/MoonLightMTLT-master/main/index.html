@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonlightMTLT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Blog</a>
+
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="https://www.facebook.com/thptphandangluunghean/">School</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="img/stars.png" id="stars">
+        <img src="img/moon.png" id="moon">
+        <img src="img/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">ManhThichLapTrinh</h2>
+        <a href="#" id="btn">Explore</a>
+        <img src="img/mountains_front.png" id="mountains_front">
+        
+    </section>
+    <div class="sec" id="sec">
+        <h2>Blog ManhThichLapTrinh</h2>
+        <p>Chào các bạn,
+            Trong bất kỳ ngành nghề nào thì cũng luôn tồn tại khái niệm career path (Con đường sự nghiệp), và ngành IT cũng không ngoại lệ. Trên thực tế, đây là chủ đề được rất nhiều bạn quan tâm, đặc biệt là các bạn đang ở level Junior và Middle.
+            Chào các bạn,
+            Trong bất kỳ ngành nghề nào thì cũng luôn tồn tại khái niệm career path (Con đường sự nghiệp), và ngành IT cũng không ngoại lệ. Trên thực tế, đây là chủ đề được rất nhiều bạn quan tâm, đặc biệt là các bạn đang ở level Junior và Middle.<br><br>Chào các bạn,
+
+            Trong bất kỳ ngành nghề nào thì cũng luôn tồn tại khái niệm career path (Con đường sự nghiệp), và ngành IT cũng không ngoại lệ. Trên thực tế, đây là chủ đề được rất nhiều bạn quan tâm, đặc biệt là các bạn đang ở level Junior và Middle.</p>
+     </div>
+
+     <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let Value = window.scrollY;
+            stars.style.left = Value * 0.25 + 'px';
+            moon.style.top = Value * 1.05 + 'px';
+            mountains_behind.style.top = Value * 0.5 + 'px';
+            mountains_front.style.top = Value * 0 + 'px';
+            text.style.marginRight = Value * 3 + 'px';
+            text.style.marginTop = Value * 1.5 + 'px';
+            btn.style.marginTop = Value * 1.5 + 'px';
+            header.style.top = Value * 0.5 +'px';
+        })
+
+     </script>
+     <div class="container">
+        <div class="btn"><a href="#">Read More</a></div>
+        <div class="btn"><a href="#">Read More</a></div>
+        <div class="btn"><a href="#">Read More</a></div>
+
+     </div>
+</body>
+</html>
